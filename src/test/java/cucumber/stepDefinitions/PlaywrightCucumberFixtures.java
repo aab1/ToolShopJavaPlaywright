@@ -28,13 +28,13 @@ public class PlaywrightCucumberFixtures {
 
     private static final ThreadLocal<Page> page = new ThreadLocal<>();
 
-    @Before(order = 100)
+    @Before(order = 1)
     public void setUpBrowserContext() {
         browserContext.set(browser.get().newContext());
         page.set(browserContext.get().newPage());
     }
 
-    @After(order = 100)
+    @After(order = 2)
     public void closeContext() {
         browserContext.get().close();
     }

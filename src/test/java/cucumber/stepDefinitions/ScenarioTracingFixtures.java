@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 
 public class ScenarioTracingFixtures {
 
-    @Before(order = 1)
+    @Before(order = 3)
     public void setupTracing() {
         PlaywrightCucumberFixtures.getBrowserContext().tracing().start(
                 new Tracing.StartOptions()
@@ -20,7 +20,7 @@ public class ScenarioTracingFixtures {
         );
     }
 
-    @After(order = 1)
+    @After(order = 4)
     public void recordTraces(Scenario scenario) {
         String traceName = scenario.getName().replace(" ","-").toLowerCase();
         PlaywrightCucumberFixtures.getBrowserContext().tracing().stop(

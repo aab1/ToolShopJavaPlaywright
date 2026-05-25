@@ -1,4 +1,4 @@
-package tests;
+package testsFiles;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.junit.UsePlaywright;
