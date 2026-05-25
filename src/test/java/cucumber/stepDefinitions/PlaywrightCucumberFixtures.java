@@ -1,4 +1,4 @@
-package com.serenitydojo.playwright.toolshop.cucumber.stepdefinitions;
+package cucumber.stepDefinitions;
 
 import com.microsoft.playwright.*;
 import io.cucumber.java.After;

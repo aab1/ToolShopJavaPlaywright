@@ -1,4 +1,4 @@
-package toolShop.pageObjects;
+package toolShopPageObjects;
 
 import com.microsoft.playwright.Page;
 import config.ScreenshotManager;

@@ -1,4 +1,4 @@
-package com.serenitydojo.playwright.toolshop.fixtures;
+package config;
 
 import com.microsoft.playwright.Page;
 import io.qameta.allure.Allure;

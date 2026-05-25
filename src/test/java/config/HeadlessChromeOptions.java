@@ -1,4 +1,4 @@
-package com.serenitydojo.playwright;
+package config;
 
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.junit.Options;

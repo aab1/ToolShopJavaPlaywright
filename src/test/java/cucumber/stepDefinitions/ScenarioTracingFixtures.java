@@ -1,7 +1,7 @@
-package cucumberFiles.stepDefinitions;
+package cucumber.stepDefinitions;
 
 import com.microsoft.playwright.Tracing;
-import cucumberFiles.PlaywrightCucumberFixtures;
+import cucumber.stepDefinitions.PlaywrightCucumberFixtures;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

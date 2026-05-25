@@ -1,12 +1,12 @@
 package cucumber.stepDefinitions;
 
-import cucumber.PlaywrightCucumberFixtures;
+import cucumber.stepDefinitions.PlaywrightCucumberFixtures;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import toolShop.pageObjects.ContactPage;
-import toolShop.pageObjects.HomePage;
+import toolShopPageObjects.ContactPage;
+import toolShopPageObjects.HomePage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

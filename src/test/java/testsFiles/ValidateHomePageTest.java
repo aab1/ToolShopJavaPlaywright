@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import toolShop.pageObjects.ContactPage;
-import toolShop.pageObjects.HomePage;
+import toolShopPageObjects.ContactPage;
+import toolShopPageObjects.HomePage;
 
 import static org.assertj.core.api.Assertions.assertThat;
 @DisplayName("Home page test")
@@ -20,12 +20,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class ValidateHomePageTest {
 
     HomePage homePage;
+    ContactPage contactPage;
 
     @BeforeEach
     void openHomePage(Page page) {
         page.navigate("https://practicesoftwaretesting.com");
         page.waitForLoadState(LoadState.NETWORKIDLE);
         homePage = new HomePage(page);
+        contactPage = new ContactPage(page);
     }
 
 
@@ -58,9 +60,9 @@ public class ValidateHomePageTest {
     @DisplayName("Verify that contact page is displayed")
     void shouldNavigateToContactPage() {
 
-        ContactPage contactPageObject = homePage.clickContact();
+        homePage.clickContact();
 
-        assertThat(contactPageObject.getHeadingText())
+        assertThat(contactPage.getHeadingText())
                 .isEqualTo("Contact");
     }
 }

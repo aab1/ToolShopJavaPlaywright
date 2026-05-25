@@ -1,8 +1,8 @@
-package cucumber;
+package cucumber.stepDefinitions;
 
 import cucumber.stepDefinitions.PlaywrightCucumberFixtures;
 import io.cucumber.java.Before;
-import toolShop.pageObjects.ContactPage;
+import toolShopPageObjects.ContactPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 

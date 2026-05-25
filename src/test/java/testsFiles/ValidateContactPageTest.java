@@ -1,4 +1,4 @@
-package tests;
+package testsFiles;
 
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.junit.UsePlaywright;
@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import toolShop.pageObjects.ContactPage;
-import toolShop.pageObjects.HomePage;
+import toolShopPageObjects.ContactPage;
+import toolShopPageObjects.HomePage;
 
 @DisplayName("Contact page test")
 @Feature("Contact page")
