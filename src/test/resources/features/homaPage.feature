@@ -1,6 +1,6 @@
 Feature: Home page
 
-  Scenario:
+  Scenario: navigate from home to contact page
     Given user navigates to the home page
     When user clicks contact nav
-    Then home button is visible in the nav bar
+    Then the contact page is displayed
